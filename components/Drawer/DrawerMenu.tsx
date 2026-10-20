@@ -112,15 +112,13 @@ export default function DrawerMenu({ visible, onClose }: DrawerMenuProps) {
             </TouchableOpacity>
           </View>
 
-          {/* GRÁFICO DECORATIVO */}
-          <View pointerEvents="none" style={styles.chart}>
-            <View style={[styles.bar, styles.barOne]} />
-            <View style={[styles.bar, styles.barTwo]} />
-            <View style={[styles.bar, styles.barThree]} />
-            <View style={[styles.bar, styles.barFour]} />
-            <View style={[styles.bar, styles.barFive]} />
-            <View style={[styles.bar, styles.barSix]} />
-          </View>
+
+
+           <Image
+                source={require("../../images/Drawer.png")}
+               style={styles.drawerImage}
+              /> 
+          
         </View>
       </View>
     </Modal>

@@ -24,6 +24,7 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 
 import TabBar from "../components/TabBar/indexTab";
+
 import DrawerMenu from "@/components/Drawer/DrawerMenu";
 
 type StatusProduto = "seguro" | "risco";
@@ -341,6 +342,7 @@ export default function HomeScreen() {
                     {item.detalhe}
                   </Text>
                 </View>
+                
               </View>
 
               <StatusBadge status={item.status} />

@@ -218,59 +218,6 @@ const styles = StyleSheet.create({
   
   },
 
-  // GRÁFICO SUPERIOR
-
-  topGrafico: {
-    position: "absolute",
-    top: 0,
-    right: -1,
-    flexDirection: "row",
-    alignItems: "flex-start",
-    gap: 7,
-    zIndex: 0,
-  },
-
-  topBar: {
-    width: 17,
-    borderBottomLeftRadius: 3,
-    borderBottomRightRadius: 3,
-  },
-
-  /* BARRA 1 */
-
-  topBar1: {
-    height: 26,
-    backgroundColor: "#B8F5D7",
-  },
-
-  /* BARRA 2 */
-
-  topBar2: {
-    height: 51,
-    backgroundColor: "#22C55E",
-  },
-
-  /* BARRA 3 */
-
-  topBar3: {
-    height: 80,
-    backgroundColor: "#16A963",
-  },
-
-  /* BARRA 4 */
-
-  topBar4: {
-    height: 57,
-    backgroundColor: "#B8F5D7",
-  },
-
-  /* BARRA 5 */
-
-  topBar5: {
-    height: 111,
-    backgroundColor: "#006B3A",
-  },
-
   //   LOGO
 
   logoContainer: {

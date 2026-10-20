@@ -128,34 +128,11 @@ export const styles = StyleSheet.create({
     borderTopLeftRadius: 2,
     borderTopRightRadius: 2,
   },
-
-  barOne: {
-    height: 88,
-    backgroundColor: "#D6B477",
-  },
-
-  barTwo: {
-    height: 122,
-    backgroundColor: "#C98200",
-  },
-
-  barThree: {
-    height: 67,
-    backgroundColor: "#E5B85F",
-  },
-
-  barFour: {
-    height: 47,
-    backgroundColor: "#F59E0B",
-  },
-
-  barFive: {
-    height: 60,
-    backgroundColor: "#FFD18A",
-  },
-
-  barSix: {
-    height: 35,
-    backgroundColor: "#FFE2B5",
-  },
+drawerImage:{
+    position: "absolute",
+    bottom: 0,
+    left: 0,
+    width: 100,
+    height: 150,
+}
 });

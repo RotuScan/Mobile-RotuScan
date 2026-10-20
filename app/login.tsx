@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   StatusBar,
   Dimensions,
+  ImageBackground,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Ionicons } from "@expo/vector-icons";
@@ -18,6 +19,8 @@ import { Geist_700Bold } from "@expo-google-fonts/geist/700Bold";
 import { router } from "expo-router";
 
 const { width } = Dimensions.get("window");
+
+const backgroundImage = require("../images/Fundo.png");
 
 export default function LoginScreen() {
   const [fontsLoaded] = useFonts({
@@ -36,17 +39,13 @@ export default function LoginScreen() {
   }
 
   return (
+       <ImageBackground
+          source={backgroundImage}
+          resizeMode="cover"
+          style={styles.background}
+        > 
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="dark-content" backgroundColor="#F5F6F8" />
-
-      {/* GRÁFICO SUPERIOR (DIREITA) */}
-      <View style={styles.topGrafico}>
-        <View style={[styles.topBar, styles.topBar1]} />
-        <View style={[styles.topBar, styles.topBar2]} />
-        <View style={[styles.topBar, styles.topBar3]} />
-        <View style={[styles.topBar, styles.topBar4]} />
-        <View style={[styles.topBar, styles.topBar5]} />
-      </View>
 
       {/* LOGO */}
       <View style={styles.logoContainer}>
@@ -129,53 +128,23 @@ export default function LoginScreen() {
           </TouchableOpacity>
         </View>
       </View>
-
-
-    </SafeAreaView>
+ </SafeAreaView>
+ </ImageBackground>
   );
 }
 
 const styles = StyleSheet.create({
+  background: {
+    flex:1,
+    width: '100%',
+    height: '100%',
+  },
   container: {
     flex: 1,
     backgroundColor: "#F5F6F8",
     alignItems: "center",
   },
 
-  /* GRÁFICO SUPERIOR */
-  topGrafico: {
-    position: "absolute",
-    top: 0,
-    right: 0,
-    flexDirection: "row",
-    gap: 12,
-    paddingRight: 2,
-  },
-  topBar: {
-    width: 22,
-    borderBottomLeftRadius: 6,
-    borderBottomRightRadius: 6,
-  },
-  topBar1: {
-    height: 42,
-    backgroundColor: "#B2F2D4",
-  },
-  topBar2: {
-    height: 86,
-    backgroundColor: "#10B981",
-  },
-  topBar3: {
-    height: 132,
-    backgroundColor: "#B2F2D4",
-  },
-  topBar4: {
-    height: 78,
-    backgroundColor: "#B2F2D4",
-  },
-  topBar5: {
-    height: 185,
-    backgroundColor: "#006B3A",
-  },
 
   /* LOGO */
   logoContainer: {
